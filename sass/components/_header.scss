@@ -1,0 +1,15 @@
+.header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2em;
+  height: 75vh;
+  text-align: center;
+  color: $tomato;
+  background-image: url(/img/northern-lights-2512775_1920.jpg);
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+}
