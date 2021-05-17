@@ -3,13 +3,13 @@
   right: 0;
   height: 3px;
   content: "";
-  background-color: $light-white;
+  background-color: $white;
   transition: width 0.3s;
-  background-color: red;
+  background-color: $white;
 }
 
 @mixin images($bgImg) {
-  background-image: $blue, url($bgImg);
+  background-image: url($bgImg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;

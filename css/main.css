@@ -8,7 +8,7 @@
   position: absolute;
   height: 40px;
   width: 60%;
-  background-color: #ffffff;
+  background-color: #fff9fb;
 }
 .white-block-left {
   bottom: 0;
@@ -41,13 +41,63 @@
   padding: 2em;
   height: 75vh;
   text-align: center;
-  color: #b12f2f;
-  background-image: url(/img/northern-lights-2512775_1920.jpg);
+  color: #fff9fb;
+  background-image: url("/img/small/header-bgc-small.jpg");
   background-size: cover;
-  background-position: bottom;
+  background-position: center;
   background-attachment: fixed;
 }
+.header__title {
+  font-size: 4.8rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+.header__heading {
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+.header__btn {
+  margin-top: 2em;
+  padding: 0.8em 1.6em;
+  font-size: 1.4rem;
+  background: #fff9fb;
+  border: none;
+  border-radius: 8px;
+  color: #000f08;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
 
+@media (min-width: 768px) {
+  .white-block {
+    height: 50px;
+    width: 45%;
+  }
+
+  .header__title {
+    font-size: 6.6rem;
+  }
+  .header__heading {
+    font-size: 2.2rem;
+  }
+  .header__heading__btn {
+    font-size: 1.6rem;
+  }
+}
+@media (min-width: 992px) {
+  .burger-btn {
+    top: 50px;
+    right: 50px;
+  }
+
+  .header {
+    background-image: url(/img/large/header-bgc-large.jpg);
+  }
+  .header__title {
+    font-size: 10rem;
+  }
+}
 *,
 *::before,
 *::after {
@@ -64,6 +114,7 @@ html {
 
 body {
   font-family: "Lato", sans-serif;
+  background-color: #fff9fb;
 }
 
 .burger-btn {
@@ -95,10 +146,10 @@ body {
   right: 0;
   height: 3px;
   content: "";
-  background-color: #ffffff;
+  background-color: #fff9fb;
   -webkit-transition: width 0.3s;
   transition: width 0.3s;
-  background-color: red;
+  background-color: #fff9fb;
 }
 .burger-btn__bars {
   width: 100%;
@@ -110,8 +161,4 @@ body {
 .burger-btn__bars::before {
   top: 27px;
   width: 30%;
-}
-
-h1 {
-  color: blue;
 }/*# sourceMappingURL=main.css.map */

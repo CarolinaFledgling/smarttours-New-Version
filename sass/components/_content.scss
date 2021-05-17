@@ -2,13 +2,14 @@
   margin: 0 auto;
   width: 100%;
   max-width: 1200px;
+  
 }
 
 .white-block {
   position: absolute;
   height: 40px;
   width: 60%;
-  background-color: $light-white;
+  background-color: $white;
 
   &-left {
     bottom: 0;
