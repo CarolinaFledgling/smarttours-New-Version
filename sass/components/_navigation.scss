@@ -95,3 +95,17 @@
     }
   }
 }
+
+@keyframes navItemsAnimation {
+  from {
+    transform: translateX(200%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+// class for animation
+.nav-items-animation {
+  animation: navItemsAnimation 1s both;
+}
