@@ -162,8 +162,16 @@
           align-items: center;
   height: 100vh;
   width: 100%;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: 0.5s cubic-bezier(0.65, 0.05, 0.36, 1);
+  transition: 0.5s cubic-bezier(0.65, 0.05, 0.36, 1);
   background-color: #2b5083;
   z-index: 100;
+}
+.nav--active {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 .nav__item {
   position: relative;
