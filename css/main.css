@@ -228,6 +228,123 @@
           animation: navItemsAnimation 1s both;
 }
 
+@media (min-width: 992px) {
+  .nav__item {
+    font-size: 4.8rem;
+  }
+}
+.section-title {
+  position: relative;
+  margin-bottom: 2em;
+  font-size: 3rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #000f08;
+  text-align: center;
+}
+
+.section-padding {
+  padding: 6em 2em;
+}
+
+.about-us__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 2em 0;
+}
+.about-us__img {
+  width: 100%;
+}
+.about-us__title {
+  margin: 1.5em 0;
+  font-size: 2rem;
+}
+.about-us__text {
+  font-size: 1.4rem;
+  line-height: 1.5em;
+}
+
+@media (min-width: 768px) {
+  .about-us__box {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .about-us__box-text {
+    width: 55%;
+  }
+  .about-us__box-text--right {
+    text-align: right;
+  }
+  .about-us__box-img {
+    width: 40%;
+  }
+  .about-us__box-img--right {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .about-us__img {
+    margin-top: 0;
+    margin-bottom: 0;
+    max-height: 300px;
+  }
+}
+@media (min-width: 768px) {
+  .section-title {
+    font-size: 3.6rem;
+  }
+
+  .section-padding {
+    padding: 7em 2em;
+  }
+
+  .about-us__text {
+    font-size: 1.8rem;
+    font-weight: 300;
+  }
+}
+@media (min-width: 992px) {
+  .section-title {
+    font-size: 4.8remrem;
+  }
+
+  .section-padding {
+    padding: 9em 2em;
+  }
+
+  .about-us__box {
+    margin: 5em 0;
+  }
+  .about-us__box-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .about-us__title {
+    font-size: 3.6rem;
+  }
+  .about-us__text {
+    font-size: 2.2rem;
+  }
+}
 *,
 *::before,
 *::after {
