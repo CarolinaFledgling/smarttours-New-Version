@@ -1,0 +1,45 @@
+.hero-img {
+  position: relative;
+  padding: 10em 2em;
+  @include images("/img/small/header-bgc-small.jpg");
+  background-position: right;
+  text-align: center;
+  color: $white;
+  overflow: hidden;
+  &__title {
+    font-weight: 400;
+    font-size: 4.4rem;
+  }
+  &__title-end {
+    color: $yellow;
+    font-weight: 400;
+  }
+}
+
+// Media
+
+@media (min-width: 768px) {
+  .hero-img {
+    padding: 30em 2em;
+
+    &__text {
+      font-size: 2.2rem;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .hero-img {
+    padding: 40em 2em;
+    @include images("/img/large/header-bgc-large.jpg");
+    background-position: right;
+
+    &__text {
+      font-size: 2.2rem;
+    }
+
+    &__title {
+      font-size: 7rem;
+    }
+  }
+}
