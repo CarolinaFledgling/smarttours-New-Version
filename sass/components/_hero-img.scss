@@ -20,7 +20,7 @@
 
 @media (min-width: 768px) {
   .hero-img {
-    padding: 30em 2em;
+    padding: 20em 2em;
 
     &__text {
       font-size: 2.2rem;
@@ -30,7 +30,7 @@
 
 @media (min-width: 992px) {
   .hero-img {
-    padding: 40em 2em;
+    padding: 20em 2em;
     @include images("/img/large/header-bgc-large.jpg");
     background-position: right;
 
