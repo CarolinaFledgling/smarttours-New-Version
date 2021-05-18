@@ -6,7 +6,7 @@
 
 .white-block {
   position: absolute;
-  height: 40px;
+  height: 20px;
   width: 60%;
   background-color: #fff9fb;
 }
@@ -21,6 +21,21 @@
   right: -50px;
   -webkit-transform: skew(45deg);
           transform: skew(45deg);
+}
+
+.section-title {
+  position: relative;
+  margin-bottom: 2em;
+  font-size: 3rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #000f08;
+  text-align: center;
+}
+
+.section-padding {
+  padding: 6em 2em;
 }
 
 .header {
