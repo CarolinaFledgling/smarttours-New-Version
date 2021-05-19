@@ -37,6 +37,12 @@
     text-decoration: none;
     text-transform: uppercase;
     cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s;
+
+    &:hover {
+      color: $pink;
+    }
   }
 }
 
@@ -73,6 +79,14 @@
 
     &__title {
       font-size: 10rem;
+    }
+    &__btn {
+      padding: 1.2em 2.1em;
+      font-size: 1.8rem;
+    }
+
+    &__heading {
+      font-size: 2.4rem;
     }
   }
 }
