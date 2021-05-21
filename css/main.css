@@ -261,21 +261,6 @@
     font-size: 4.8rem;
   }
 }
-.section-title {
-  position: relative;
-  margin-bottom: 2em;
-  font-size: 3rem;
-  font-weight: 400;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  color: #000f08;
-  text-align: center;
-}
-
-.section-padding {
-  padding: 6em 2em;
-}
-
 .about-us__box {
   display: -webkit-box;
   display: -ms-flexbox;
