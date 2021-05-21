@@ -1,0 +1,97 @@
+.section-title {
+  color: $dark;
+}
+
+.white-block-left {
+  background-color: $dark;
+}
+.contact {
+  position: relative;
+  background-color: $blue-light;
+  overflow: hidden;
+  font-family: "Lato", sans-serif;
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.6rem;
+    max-width: 30em;
+    padding: 3em;
+    margin: 5em auto;
+    box-shadow: 0px 7px 5px -2px rgba(0, 0, 0, 0.32);
+    background-color: $white;
+
+  }
+  &__textarea {
+    max-width: 100%;
+    width: 100%;
+    min-height: 150px;
+    min-width: 150px;
+    resize: none;
+    &::placeholder {
+      font-family: "Lato", sans-serif;
+    }
+  }
+
+  &__list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  &__item {
+    display: block;
+    margin-bottom: 10px;
+    min-height: 35px;
+  }
+
+  &__field-style {
+    font-size: 1.6rem;
+    width: 100%;
+    padding: 1em;
+    color:$dark;
+    margin: 1em 0;
+    border: none;
+    border-bottom: 3px solid;
+    font-family: "Lato", sans-serif;
+  }
+
+  &__button-submit {
+    position: relative;
+    align-self: flex-end;
+    padding: 1em 2em;
+    text-align: center;
+    border: none;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: none;
+    font-weight: bold;
+    z-index: 1;
+    background: none;
+    cursor: pointer;
+    &:after {
+      content: "";
+      left: 0px;
+      top: 0px;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border: 1px solid rgb(0, 0, 0);
+      opacity: 1;
+    }
+    &:before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 9px;
+      right: 9px;
+      background-color: $yellow;
+      z-index: -1;
+    }
+  }
+}
