@@ -1,6 +1,9 @@
 const nav = document.querySelector(".nav");
 const navBtn = document.querySelector(".burger-btn");
 const allNavItems = document.querySelectorAll(".nav__item");
+const navBtnBars = document.querySelector(".burger-btn__bars");
+const allSections = document.querySelectorAll(".section");
+const footerYear = document.querySelector(".footer__bottom-year");
 
 const handleNav = () => {
   nav.classList.toggle("nav--active");
@@ -10,10 +13,8 @@ const handleNav = () => {
       nav.classList.remove("nav--active");
     });
   });
-  handleNavItemsAnimation()
+  handleNavItemsAnimation();
 };
-
-// animation for items
 
 const handleNavItemsAnimation = () => {
   let delayTime = 0;
@@ -24,5 +25,12 @@ const handleNavItemsAnimation = () => {
     delayTime++;
   });
 };
+
+const handleCurrentYear = () => {
+  const currentYear = new Date().getFullYear();
+  footerYear.innerText = currentYear;
+};
+
+handleCurrentYear();
 
 navBtn.addEventListener("click", handleNav);

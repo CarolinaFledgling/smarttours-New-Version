@@ -179,6 +179,12 @@
   width: 30%;
 }
 
+.black-bars-color,
+.black-bars-color::after,
+.black-bars-color::before {
+  background-color: #000f08;
+}
+
 .nav {
   position: fixed;
   top: 0;
