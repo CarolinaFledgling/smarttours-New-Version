@@ -88,9 +88,10 @@
     border: none;
     background-color: $white;
     color: $dark;
-    font-weight: 400;
+    font-weight: bold;
     cursor: pointer;
     z-index: 1000;
+    letter-spacing: 1px;
   }
   &__card-info-btn:hover {
     color: $pink;
@@ -98,12 +99,13 @@
 
   &__card-info-link {
     font-size: 1.8rem;
-    font-weight: 300;
+    font-weight: 400;
     color: $pink;
     cursor: pointer;
     padding: 1em;
     text-decoration: none;
     z-index: 1000;
+    transition: text-decoration 0.3s;
     &:hover {
       text-decoration: underline;
     }

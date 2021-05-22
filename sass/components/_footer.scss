@@ -48,7 +48,19 @@
   &__box-text {
     font-size: 1.4rem;
     font-weight: 300;
-    line-height: 1.5rem;
+    line-height: 1.5em;
+  }
+  &__bottom-link {
+    color: $white;
+    text-decoration: none;
+    font-size: 2rem;
+    transition: color 0.3s;
+    &:hover {
+      color: $yellow;
+    }
+  }
+  &__bottom-text {
+    font-size: 2rem;
   }
 }
 
@@ -59,7 +71,6 @@
     &__boxes {
       display: flex;
       justify-content: space-between;
-      
     }
 
     &__box-desktop {
@@ -80,12 +91,17 @@
     &__box-list {
       list-style: none;
     }
-    &__box-list-item{
+    &__box-list-item {
       margin-bottom: 1em;
-
-      a {
-        color: $white;
-        text-decoration: none;
+      font-size: 1.4rem;
+    }
+    &__box-list-link {
+      color: $white;
+      text-decoration: none;
+      margin-bottom: 2rem;
+      transition: color 0.3s;
+      &:hover {
+        color: $yellow;
       }
     }
   }
