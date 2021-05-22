@@ -11,7 +11,6 @@ The project required me to build a simple landing page for Travel agency
 
 Project is: _in progress_,
 
-## Preview the website live on : [DEMO]( https://carolinafledgling.github.io/smarttours-New-Version/)
 
 
 
