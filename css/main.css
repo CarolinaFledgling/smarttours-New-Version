@@ -179,12 +179,6 @@
   width: 30%;
 }
 
-.black-bars-color,
-.black-bars-color::after,
-.black-bars-color::before {
-  background-color: #000f08;
-}
-
 .nav {
   position: fixed;
   top: 0;
@@ -270,6 +264,12 @@
     font-size: 4.8rem;
   }
 }
+.black-bars-color,
+.black-bars-color::after,
+.black-bars-color::before {
+  background-color: #000f08;
+}
+
 .about-us__box {
   display: -webkit-box;
   display: -ms-flexbox;

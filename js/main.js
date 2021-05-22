@@ -31,6 +31,27 @@ const handleCurrentYear = () => {
   footerYear.innerText = currentYear;
 };
 
+const handleCurrentSection = () => {
+  const currentSection = window.scrollY;
+
+  allSections.forEach((section) => {
+    if (
+      section.classList.contains("white-section") &&
+      section.offsetTop <= currentSection + 60
+    ) {
+      console.log("jest na białym", section.offsetTop);
+      navBtnBars.classList.add("black-bars-color");
+    } else if (
+      !section.classList.contains("white-section") &&
+      section.offsetTop <= currentSection + 60
+    ) {
+      navBtnBars.classList.remove("black-bars-color");
+      console.log("jest na białym", section.offsetTop);
+    }
+  });
+};
+
 handleCurrentYear();
 
 navBtn.addEventListener("click", handleNav);
+window.addEventListener("scroll", handleCurrentSection);
