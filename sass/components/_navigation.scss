@@ -76,6 +76,7 @@
     padding: 0.5em 2em;
     font-size: 2.8rem;
     color: $white;
+    font-weight: 300;
     text-decoration: none;
 
     &::before {
@@ -93,6 +94,14 @@
     &:hover::before {
       transform: scaleY(1);
     }
+  }
+  &__title-end {
+    font-weight: 400;
+    color: $yellow;
+  }
+  &__title-front {
+    font-weight: 400;
+    color: $white;
   }
 }
 

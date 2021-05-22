@@ -211,6 +211,7 @@
   padding: 0.5em 2em;
   font-size: 2.8rem;
   color: #fff;
+  font-weight: 300;
   text-decoration: none;
 }
 .nav__item::before {
@@ -231,6 +232,14 @@
 .nav__item:hover::before {
   -webkit-transform: scaleY(1);
           transform: scaleY(1);
+}
+.nav__title-end {
+  font-weight: 400;
+  color: #ffd829;
+}
+.nav__title-front {
+  font-weight: 400;
+  color: #fff;
 }
 
 @-webkit-keyframes navItemsAnimation {
