@@ -37,13 +37,13 @@ const handleCurrentSection = () => {
   allSections.forEach((section) => {
     if (
       section.classList.contains("white-section") &&
-      section.offsetTop <= currentSection + 60
+      section.offsetTop <= currentSection + 20
     ) {
       console.log("jest na białym", section.offsetTop);
       navBtnBars.classList.add("black-bars-color");
     } else if (
       !section.classList.contains("white-section") &&
-      section.offsetTop <= currentSection + 60
+      section.offsetTop <= currentSection + 20
     ) {
       navBtnBars.classList.remove("black-bars-color");
       console.log("jest na białym", section.offsetTop);
