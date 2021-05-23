@@ -1,7 +1,7 @@
 .hero-img {
   position: relative;
   padding: 10em 2em;
-  @include images("/img/small/header-bgc-small.jpg");
+  @include images("../img/small/header-bgc-small.jpg");
   background-position: right;
   text-align: center;
   color: $white;
@@ -31,7 +31,7 @@
 @media (min-width: 992px) {
   .hero-img {
     padding: 20em 2em;
-    @include images("/img/large/header-bgc-large.jpg");
+    @include images("../img/large/header-bgc-large.jpg");
     background-position: right;
 
     &__text {
