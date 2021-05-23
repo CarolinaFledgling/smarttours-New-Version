@@ -1,14 +1,14 @@
 .hero-img {
   position: relative;
   padding: 10em 2em;
-  @include images('../img/small/header-bgc-small.jpg');
+  @include images("../img/small/header-bgc-small.jpg");
   background-position: right;
   text-align: center;
   color: $white;
   overflow: hidden;
   &__title {
     font-weight: 400;
-    font-size: 4.4rem;s
+    font-size: 4.4rem;
   }
   &__title-end {
     color: $yellow;
@@ -31,7 +31,7 @@
 @media (min-width: 992px) {
   .hero-img {
     padding: 20em 2em;
-    @include images('../img/large/header-bgc-large.jpg');
+    @include images("../img/large/header-bgc-large.jpg");
     background-position: right;
 
     &__text {

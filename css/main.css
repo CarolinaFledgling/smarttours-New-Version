@@ -60,7 +60,7 @@
   height: 75vh;
   text-align: center;
   color: #fff;
-  background-image: url("/img/small/header-bgc-small.jpg");
+  background-image: url("../img/small/header-bgc-small.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -120,7 +120,7 @@
   }
 
   .header {
-    background-image: url(/img/large/header-bgc-large.jpg);
+    background-image: url("../img/large/header-bgc-large.jpg");
   }
   .header__title {
     font-size: 10rem;
@@ -381,7 +381,7 @@
 .hero-img {
   position: relative;
   padding: 10em 2em;
-  background-image: url("/img/small/header-bgc-small.jpg");
+  background-image: url("../img/small/header-bgc-small.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -410,7 +410,7 @@
 @media (min-width: 992px) {
   .hero-img {
     padding: 20em 2em;
-    background-image: url("/img/large/header-bgc-large.jpg");
+    background-image: url("../img/large/header-bgc-large.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
