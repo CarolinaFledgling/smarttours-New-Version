@@ -46,9 +46,6 @@
   }
 }
 
-
-
-
 // MEDIA
 
 @media (min-width: 768px) {
@@ -78,7 +75,7 @@
   }
 
   .header {
-    background-image: url(../img/large/header-bgc-large.jpg);
+    background-image: url("../img/large/header-bgc-large.jpg");
 
     &__title {
       font-size: 10rem;
