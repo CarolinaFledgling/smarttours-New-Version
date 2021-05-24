@@ -13,6 +13,12 @@ The project required me to build a simple landing page for Travel agency
 - Vanilla JavaScript implementation of smart navigation and animate on scroll 🚀
 - Perfect scores on accessibility, performance, best practices and SEO 🚀
 
+## Design What I did:
+- Tried to keep design balanced 
+- Picked three base colors
+- Picked the right font ( font is key to having a good website design,  Be mindful of the load times, remember about readable contrast)
+- Added white space around elements to make them stand out.
+
 ## Status
 
 Project is: _in progress_,
