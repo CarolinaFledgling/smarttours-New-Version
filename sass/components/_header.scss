@@ -8,8 +8,12 @@
   height: 75vh;
   text-align: center;
   color: $white;
-  @include images("../img/small/header-bgc-small.jpg");
+  // @include images("../img/small/header-bgc-small.jpg");
+  background-image: url("../img/small/header-bgc-small.jpg");
   background-attachment: scroll;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 
   &__title {
     font-size: 4.8rem;

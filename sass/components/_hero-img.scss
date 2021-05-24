@@ -1,9 +1,13 @@
 .hero-img {
   position: relative;
   padding: 10em 2em;
-  @include images("../img/small/header-bgc-small.jpg");
+  // @include images("../img/small/header-bgc-small.jpg");
+  background-image: url("../img/small/header-bgc-small.jpg");
   background-attachment: scroll;
-  background-position: right;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
   text-align: center;
   color: $white;
   overflow: hidden;
