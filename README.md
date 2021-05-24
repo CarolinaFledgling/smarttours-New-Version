@@ -1,7 +1,7 @@
 # Smarttours-New-Version
 
 ## Description 
-This project is made independently and without any starter code. It is made with HTML, CSS, SASS, BEM and JavaScript.
+This project is made independently and without any starter code. It is made with HTML, CSS, SASS, JavaScript and plugin Slick.
 While creating the website I solved a many problems and learned many new things.
 
 ## General info
