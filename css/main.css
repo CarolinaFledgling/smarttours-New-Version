@@ -64,6 +64,7 @@
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  width: 100%;
 }
 .header__title {
   font-size: 4.8rem;
@@ -134,6 +135,11 @@
   }
 }
 .burger-btn {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  white-space: nowrap;
   display: block;
   position: fixed;
   top: 20px;
@@ -388,6 +394,7 @@
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  width: 100%;
   background-position: right;
   text-align: center;
   color: #fff;
@@ -417,6 +424,7 @@
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    width: 100%;
     background-position: right;
   }
   .hero-img__text {

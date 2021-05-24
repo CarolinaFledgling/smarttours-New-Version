@@ -1,6 +1,8 @@
 // Burger btn
 
 .burger-btn {
+  user-select: none;
+  white-space: nowrap;
   display: block;
   position: fixed;
   top: 20px;
