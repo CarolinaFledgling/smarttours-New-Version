@@ -8,10 +8,10 @@ While creating the website I solved a many problems and learned many new things.
 The project required me to build a simple landing page for Travel agency
 
 ## Focusing on :
-🚀 Clear content and easy to navigate.
-🚀 Built with HTML, CSS and JavaScript (no frameworks or libraries)
-🚀 Vanilla JavaScript implementation of smart navigation and animate on scroll
-🚀 Perfect scores on accessibility, performance, best practices and SEO
+- Clear content and easy to navigate. 🚀
+- Built with HTML, CSS and JavaScript (no frameworks or libraries) 🚀
+- Vanilla JavaScript implementation of smart navigation and animate on scroll 🚀
+- Perfect scores on accessibility, performance, best practices and SEO 🚀
 
 ## Status
 
