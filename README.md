@@ -9,7 +9,7 @@ The project required me to build a simple landing page for Travel agency
 
 ## Focusing on :
 - Clear content and easy to navigate. 🚀
-- Built with HTML, CSS and JavaScript (no frameworks or libraries) 🚀
+- Built with HTML, CSS and JavaScript 🚀
 - Vanilla JavaScript implementation of smart navigation and animate on scroll 🚀
 - Perfect scores on accessibility, performance, best practices and SEO 🚀
 
