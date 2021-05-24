@@ -60,7 +60,7 @@
   height: 75vh;
   text-align: center;
   color: #fff;
-  background-image: url("../img/small/header-bgc-small.jpg");
+  background-image: url("../img/large/header-bgc-large.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -104,6 +104,9 @@
     width: 45%;
   }
 
+  .header {
+    background-image: url("../img/small/header-bgc-small.jpg");
+  }
   .header__title {
     font-size: 6.6rem;
   }
