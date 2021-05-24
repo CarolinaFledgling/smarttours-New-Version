@@ -10,8 +10,10 @@
 
 @mixin images($bgImg) {
   background-image: url($bgImg);
+  background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: cover;
+  top: 0;
+  left: 0;
 }

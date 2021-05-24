@@ -60,11 +60,14 @@
   height: 75vh;
   text-align: center;
   color: #fff;
-  background-image: url("../img/large/header-bgc-large.jpg");
+  background-image: url("../img/small/header-bgc-small.jpg");
+  background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: cover;
+  top: 0;
+  left: 0;
+  background-attachment: scroll;
 }
 .header__title {
   font-size: 4.8rem;
@@ -394,10 +397,13 @@
   position: relative;
   padding: 10em 2em;
   background-image: url("../img/small/header-bgc-small.jpg");
+  background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: cover;
+  top: 0;
+  left: 0;
+  background-attachment: scroll;
   background-position: right;
   text-align: center;
   color: #fff;
@@ -424,11 +430,6 @@
   .hero-img {
     padding: 20em 2em;
     background-image: url("../img/large/header-bgc-large.jpg");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: right;
   }
   .hero-img__text {
     font-size: 2.2rem;
