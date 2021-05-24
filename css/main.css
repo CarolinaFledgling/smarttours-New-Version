@@ -61,10 +61,10 @@
   text-align: center;
   color: #fff;
   background-image: url("../img/small/header-bgc-small.jpg");
-  background-size: cover;
-  background-position: center;
+  background-position: center center;
+  background-repeat: no-repeat;
   background-attachment: fixed;
-  width: 100%;
+  background-size: cover;
 }
 .header__title {
   font-size: 4.8rem;
@@ -391,10 +391,10 @@
   position: relative;
   padding: 10em 2em;
   background-image: url("../img/small/header-bgc-small.jpg");
-  background-size: cover;
-  background-position: center;
+  background-position: center center;
+  background-repeat: no-repeat;
   background-attachment: fixed;
-  width: 100%;
+  background-size: cover;
   background-position: right;
   text-align: center;
   color: #fff;
@@ -421,10 +421,10 @@
   .hero-img {
     padding: 20em 2em;
     background-image: url("../img/large/header-bgc-large.jpg");
-    background-size: cover;
-    background-position: center;
+    background-position: center center;
+    background-repeat: no-repeat;
     background-attachment: fixed;
-    width: 100%;
+    background-size: cover;
     background-position: right;
   }
   .hero-img__text {
