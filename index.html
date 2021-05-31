@@ -86,7 +86,8 @@
                 <div class="offers__cards">
                     <div class="offers__card-info offers__card--first">
                         <h3 class="offers__card-info-title">The Sea Explorer</h3>
-                        <img class="offers__card-info-img" src="./img/small/forest-girl320.jpg" width="640" height="420" alt="
+                        <img class="offers__card-info-img" src="./img/small/forest-girl320.jpg" width="640" height="420"
+                            alt="
                         A woman sitting on a rock in the mountains">
                         <ul class="offers__card-info-list">
                             <li class="offers__card-info-list-item">3 day tours</li>
@@ -221,13 +222,23 @@
                 <form class="contact__form">
                     <ul class="contact__list">
                         <li class="contact__item">
-                            <input type="text" name="field1" class="contact__field-style" placeholder="Name" />
-                            <input type="email" name="field2" class="contact__field-style " placeholder="Email" />
+                            <input type="text" name="field1" class="contact__field-style" id="username"
+                                placeholder="Name" />
+                            <input type="email" name="field2" class="contact__field-style " id='email'
+                                placeholder="Email" />
                         </li>
                         <li class="contact__item">
-                            <input type="text" name="field3" class="contact__field-style" placeholder="Phone" />
-                            <input type="url" name="field4" class="contact__field-style "
-                                placeholder="Name of the trip" />
+                            <input type="text" name="field3" class="contact__field-style" id="phone"
+                                placeholder="Phone" />
+                        </li>
+                        <li class="contact__item">
+                            <select name="names-trip" id="slecet-trips"
+                                class="contact__field-style contact__field-style-select">
+                                <option value="Choose a trip:">Choose a trip:</option>
+                                <option value="The Sea Explorer">The Sea Explorer</option>
+                                <option value="The Forest Hike">The Forest Hike</option>
+                                <option value="The Snow Adventure">The Snow Adventure</option>
+                            </select>
                         </li>
 
                         <li class="contact__item">
@@ -289,6 +300,7 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="js/slick.js"></script>
+    <script src="js/form-validation.js"></script>
     <script src="js/main.js"></script>
 </body>
 

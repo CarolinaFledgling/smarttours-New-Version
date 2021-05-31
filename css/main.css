@@ -628,7 +628,7 @@
 
 .contact {
   position: relative;
-  background-color: #F0F4FA;
+  background-color: #f0f4fa;
   overflow: hidden;
   font-family: "Lato", sans-serif;
 }
@@ -692,10 +692,32 @@
   font-size: 1.6rem;
   width: 100%;
   padding: 1em;
-  color: #000f08;
   margin: 1em 0;
   border: none;
   border-bottom: 3px solid;
+  font-family: "Lato", sans-serif;
+}
+.contact__field-style::-webkit-input-placeholder {
+  color: #000f08;
+  font-family: "Lato", sans-serif;
+}
+.contact__field-style::-moz-placeholder {
+  color: #000f08;
+  font-family: "Lato", sans-serif;
+}
+.contact__field-style:-ms-input-placeholder {
+  color: #000f08;
+  font-family: "Lato", sans-serif;
+}
+.contact__field-style::-ms-input-placeholder {
+  color: #000f08;
+  font-family: "Lato", sans-serif;
+}
+.contact__field-style::placeholder {
+  color: #000f08;
+  font-family: "Lato", sans-serif;
+}
+.contact__field-style-select option {
   font-family: "Lato", sans-serif;
 }
 .contact__button-submit {

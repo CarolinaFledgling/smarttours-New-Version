@@ -49,13 +49,20 @@
     font-size: 1.6rem;
     width: 100%;
     padding: 1em;
-    color: $dark;
     margin: 1em 0;
     border: none;
     border-bottom: 3px solid;
     font-family: "Lato", sans-serif;
   }
 
+  &__field-style::placeholder {
+    color: $dark;
+    font-family: "Lato", sans-serif;
+  }
+
+  &__field-style-select option {
+    font-family: "Lato", sans-serif;
+  }
   &__button-submit {
     position: relative;
     align-self: flex-end;
