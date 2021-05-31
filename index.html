@@ -221,29 +221,29 @@
             <div class="wrapper">
                 <form class="contact__form">
                     <ul class="contact__list">
-                        <li class="contact__item">
-                            <input type="text" name="field1" class="contact__field-style" id="username"
-                                placeholder="Name" />
-                            <input type="email" name="field2" class="contact__field-style " id='email'
-                                placeholder="Email" />
+                        <li class="form-box">
+                            <input type="text" name="field1" class="form-box__input" id="username" placeholder="Name" />
+                            <p class="form-box__error-text"></p>
                         </li>
-                        <li class="contact__item">
-                            <input type="text" name="field3" class="contact__field-style" id="phone"
-                                placeholder="Phone" />
+                        <li class="form-box">
+                            <input type="email" name="field2" class="form-box__input" id='email' placeholder="Email" />
+                            <p class="form-box__error-text"></p>
                         </li>
-                        <li class="contact__item">
-                            <select name="names-trip" id="slecet-trips"
-                                class="contact__field-style contact__field-style-select">
+                        <li class="form-box">
+                            <input type="text" name="field3" class="form-box__input" id="phone" placeholder="Phone" />
+                            <p class="form-box__error-text form-box__error-text--error"></p>
+                        </li>
+                        <li class="form-box">
+                            <select name="names-trip" id="slecet-trips" class="form-box__input form-box__input-select">
                                 <option value="Choose a trip:">Choose a trip:</option>
                                 <option value="The Sea Explorer">The Sea Explorer</option>
                                 <option value="The Forest Hike">The Forest Hike</option>
                                 <option value="The Snow Adventure">The Snow Adventure</option>
                             </select>
                         </li>
-
-                        <li class="contact__item">
-                            <textarea name="field5" class="contact__field-style contact__textarea"
-                                placeholder="Remember, be nice! 😆 Send Message" cols="30" rows="5"></textarea>
+                        <li class="form-box">
+                            <textarea name="field5" class="form-box__input form-box__input-textarea" id="textarea"
+                                placeholder="Send Message - Remember, be nice! 😆" cols="30" rows="5"></textarea>
                         </li>
                     </ul>
                     <div>

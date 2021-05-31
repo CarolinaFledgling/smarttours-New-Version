@@ -656,69 +656,10 @@
           box-shadow: 0px 7px 5px -2px rgba(0, 0, 0, 0.32);
   background-color: #fff;
 }
-.contact__textarea {
-  max-width: 100%;
-  width: 100%;
-  min-height: 150px;
-  min-width: 150px;
-  resize: none;
-}
-.contact__textarea::-webkit-input-placeholder {
-  font-family: "Lato", sans-serif;
-}
-.contact__textarea::-moz-placeholder {
-  font-family: "Lato", sans-serif;
-}
-.contact__textarea:-ms-input-placeholder {
-  font-family: "Lato", sans-serif;
-}
-.contact__textarea::-ms-input-placeholder {
-  font-family: "Lato", sans-serif;
-}
-.contact__textarea::placeholder {
-  font-family: "Lato", sans-serif;
-}
 .contact__list {
   padding: 0;
   margin: 0;
   list-style: none;
-}
-.contact__item {
-  display: block;
-  margin-bottom: 10px;
-  min-height: 35px;
-}
-.contact__field-style {
-  font-size: 1.6rem;
-  width: 100%;
-  padding: 1em;
-  margin: 1em 0;
-  border: none;
-  border-bottom: 3px solid;
-  font-family: "Lato", sans-serif;
-}
-.contact__field-style::-webkit-input-placeholder {
-  color: #000f08;
-  font-family: "Lato", sans-serif;
-}
-.contact__field-style::-moz-placeholder {
-  color: #000f08;
-  font-family: "Lato", sans-serif;
-}
-.contact__field-style:-ms-input-placeholder {
-  color: #000f08;
-  font-family: "Lato", sans-serif;
-}
-.contact__field-style::-ms-input-placeholder {
-  color: #000f08;
-  font-family: "Lato", sans-serif;
-}
-.contact__field-style::placeholder {
-  color: #000f08;
-  font-family: "Lato", sans-serif;
-}
-.contact__field-style-select option {
-  font-family: "Lato", sans-serif;
 }
 .contact__button-submit {
   position: relative;
@@ -754,6 +695,75 @@
   right: 3px;
   background-color: #ffd829;
   z-index: -1;
+}
+
+.form-box {
+  display: block;
+  margin-bottom: 10px;
+  min-height: 35px;
+}
+.form-box__input {
+  font-size: 1.6rem;
+  width: 100%;
+  padding: 1em;
+  margin: 1em 0;
+  border: none;
+  border-bottom: 3px solid;
+  font-family: "Lato", sans-serif;
+}
+.form-box__input--error {
+  border-bottom: 3px solid #0089fa;
+  background-color: rgba(0, 137, 250, 0.1);
+}
+.form-box__input::-webkit-input-placeholder {
+  color: #000f08;
+  font-family: "Lato", sans-serif;
+}
+.form-box__input::-moz-placeholder {
+  color: #000f08;
+  font-family: "Lato", sans-serif;
+}
+.form-box__input:-ms-input-placeholder {
+  color: #000f08;
+  font-family: "Lato", sans-serif;
+}
+.form-box__input::-ms-input-placeholder {
+  color: #000f08;
+  font-family: "Lato", sans-serif;
+}
+.form-box__input::placeholder {
+  color: #000f08;
+  font-family: "Lato", sans-serif;
+}
+.form-box__input-select option {
+  font-family: "Lato", sans-serif;
+}
+.form-box__error-text {
+  visibility: hidden;
+  font-size: 1.5rem;
+  color: #0089fa;
+}
+.form-box__input-textarea {
+  max-width: 100%;
+  width: 100%;
+  min-height: 150px;
+  min-width: 150px;
+  resize: none;
+}
+.form-box__input-textarea::-webkit-input-placeholder {
+  font-family: "Lato", sans-serif;
+}
+.form-box__input-textarea::-moz-placeholder {
+  font-family: "Lato", sans-serif;
+}
+.form-box__input-textarea:-ms-input-placeholder {
+  font-family: "Lato", sans-serif;
+}
+.form-box__input-textarea::-ms-input-placeholder {
+  font-family: "Lato", sans-serif;
+}
+.form-box__input-textarea::placeholder {
+  font-family: "Lato", sans-serif;
 }
 
 .footer {

@@ -22,16 +22,6 @@
     box-shadow: 0px 7px 5px -2px rgba(0, 0, 0, 0.32);
     background-color: $white;
   }
-  &__textarea {
-    max-width: 100%;
-    width: 100%;
-    min-height: 150px;
-    min-width: 150px;
-    resize: none;
-    &::placeholder {
-      font-family: "Lato", sans-serif;
-    }
-  }
 
   &__list {
     padding: 0;
@@ -39,30 +29,6 @@
     list-style: none;
   }
 
-  &__item {
-    display: block;
-    margin-bottom: 10px;
-    min-height: 35px;
-  }
-
-  &__field-style {
-    font-size: 1.6rem;
-    width: 100%;
-    padding: 1em;
-    margin: 1em 0;
-    border: none;
-    border-bottom: 3px solid;
-    font-family: "Lato", sans-serif;
-  }
-
-  &__field-style::placeholder {
-    color: $dark;
-    font-family: "Lato", sans-serif;
-  }
-
-  &__field-style-select option {
-    font-family: "Lato", sans-serif;
-  }
   &__button-submit {
     position: relative;
     align-self: flex-end;
@@ -98,3 +64,49 @@
     }
   }
 }
+
+.form-box {
+  display: block;
+  margin-bottom: 10px;
+  min-height: 35px;
+
+  &__input {
+    font-size: 1.6rem;
+    width: 100%;
+    padding: 1em;
+    margin: 1em 0;
+    border: none;
+    border-bottom: 3px solid;
+    font-family: "Lato", sans-serif;
+  }
+  &__input--error {
+    border-bottom: 3px solid $error-blue;
+    background-color: rgba(0, 137, 250, 0.1);
+  }
+
+  &__input::placeholder {
+    color: $dark;
+    font-family: "Lato", sans-serif;
+  }
+
+  &__input-select option {
+    font-family: "Lato", sans-serif;
+  }
+
+  &__error-text {
+    visibility: hidden;
+    font-size: 1.5rem;
+    color: $error-blue;
+  }
+  &__input-textarea {
+    max-width: 100%;
+    width: 100%;
+    min-height: 150px;
+    min-width: 150px;
+    resize: none;
+    &::placeholder {
+      font-family: "Lato", sans-serif;
+    }
+  }
+}
+
