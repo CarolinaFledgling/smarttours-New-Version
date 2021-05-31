@@ -7,8 +7,15 @@ const sendBtn = document.querySelector(".contact__button-submit");
 const boxItem = document.querySelector(".form-box");
 const errorMsg = document.querySelector(".form-box__error-text");
 
-const checkForm = (input) => {
+const showError = (input, msg) => {
   console.log(input);
+  input.classList.add("form-box__input--error");
+  errorMsg.style.visibility = "visible";
+  console.log(msg);
+  errorMsg.textContent = msg;
+};
+
+const checkFormValue = (input) => {
   input.forEach((el) => {
     if (el.value === "") {
       showError(el, el.placeholder);
@@ -24,13 +31,6 @@ const clearError = (input) => {
     input.classList.remove("form-box__input--error");
     errorMsg.style.visibility = "hidden";
   });
-};
-
-const showError = (input, msg) => {
-  input.classList.add("form-box__input--error");
-  errorMsg.style.visibility = "visible";
-  console.log(msg);
-  errorMsg.textContent = msg;
 };
 
 checkLength = (input, min) => {
@@ -61,7 +61,6 @@ const checkPhone = (phone) => {
 // check the number of errors
 const checkErrors = () => {
   const allInputs = document.querySelectorAll(".form-box__input");
-  console.log(allInputs);
   let errorCount = 0;
 
   allInputs.forEach((el) => {
@@ -77,7 +76,7 @@ const checkErrors = () => {
 
 sendBtn.addEventListener("click", (e) => {
   e.preventDefault();
-  checkForm([username, email, phone]);
+  checkFormValue([username, email, phone]);
   checkLength(username, 3);
   checkEmail(email);
   checkPhone(phone);
