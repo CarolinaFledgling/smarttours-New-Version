@@ -85,8 +85,16 @@
   }
 
   &__input::placeholder {
-    color: $dark;
+    color: $grey;
     font-family: "Lato", sans-serif;
+    font-size: 1.3rem;
+  }
+  &__input:last-child::placeholder {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: $dark;
+    text-align: center;
+    padding-left: 0;
   }
 
   &__input-select option {
@@ -97,6 +105,12 @@
     visibility: hidden;
     font-size: 1.5rem;
     color: $error-blue;
+  }
+  &__label {
+    padding-left: 1em;
+    font-size: 1.8rem;
+    font-weight: bold;
+    letter-spacing: 0.6px;
   }
   &__input-textarea {
     max-width: 100%;
@@ -109,4 +123,3 @@
     }
   }
 }
-

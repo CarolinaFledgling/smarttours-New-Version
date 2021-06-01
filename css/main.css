@@ -716,24 +716,64 @@
   background-color: rgba(0, 137, 250, 0.1);
 }
 .form-box__input::-webkit-input-placeholder {
-  color: #000f08;
+  color: #686865;
   font-family: "Lato", sans-serif;
+  font-size: 1.3rem;
 }
 .form-box__input::-moz-placeholder {
-  color: #000f08;
+  color: #686865;
   font-family: "Lato", sans-serif;
+  font-size: 1.3rem;
 }
 .form-box__input:-ms-input-placeholder {
-  color: #000f08;
+  color: #686865;
   font-family: "Lato", sans-serif;
+  font-size: 1.3rem;
 }
 .form-box__input::-ms-input-placeholder {
-  color: #000f08;
+  color: #686865;
   font-family: "Lato", sans-serif;
+  font-size: 1.3rem;
 }
 .form-box__input::placeholder {
-  color: #000f08;
+  color: #686865;
   font-family: "Lato", sans-serif;
+  font-size: 1.3rem;
+}
+.form-box__input:last-child::-webkit-input-placeholder {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #000f08;
+  text-align: center;
+  padding-left: 0;
+}
+.form-box__input:last-child::-moz-placeholder {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #000f08;
+  text-align: center;
+  padding-left: 0;
+}
+.form-box__input:last-child:-ms-input-placeholder {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #000f08;
+  text-align: center;
+  padding-left: 0;
+}
+.form-box__input:last-child::-ms-input-placeholder {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #000f08;
+  text-align: center;
+  padding-left: 0;
+}
+.form-box__input:last-child::placeholder {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #000f08;
+  text-align: center;
+  padding-left: 0;
 }
 .form-box__input-select option {
   font-family: "Lato", sans-serif;
@@ -742,6 +782,12 @@
   visibility: hidden;
   font-size: 1.5rem;
   color: #0089fa;
+}
+.form-box__label {
+  padding-left: 1em;
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: 0.6px;
 }
 .form-box__input-textarea {
   max-width: 100%;
