@@ -4,14 +4,17 @@ const phone = document.querySelector("#phone");
 const textarea = document.querySelector("#textarea");
 const popup = document.querySelector(".contact-popup");
 const sendBtn = document.querySelector(".contact__button-submit");
-const boxItem = document.querySelector(".form-box");
-const errorMsg = document.querySelector(".form-box__error-text");
+const clearBtn = document.querySelector(".contact__button-clear");
+const closeBtnPopup = document.querySelector(".contact-popup__button-close");
 
 const showError = (input, msg) => {
-  console.log(input);
+  // console.log("msg", msg);
+  // console.log("input", input);
+
+  const formBox = input.parentElement;
+  const errorMsg = formBox.querySelector(".form-box__error-text");
   input.classList.add("form-box__input--error");
   errorMsg.style.visibility = "visible";
-  console.log(msg);
   errorMsg.textContent = msg;
 };
 
@@ -25,15 +28,22 @@ const checkFormValue = (input) => {
   });
 };
 
-const clearError = (input) => {
-  [username, email, phone, textarea].forEach((el) => {
-    el.value = "";
-    input.classList.remove("form-box__input--error");
-    errorMsg.style.visibility = "hidden";
-  });
+const clearForm = (input) => {
+  const formBox = input.parentElement;
+  const errorMsg = formBox.querySelector(".form-box__error-text");
+  input.classList.remove("form-box__input--error");
+  errorMsg.style.visibility = "hidden";
 };
 
-checkLength = (input, min) => {
+const clearError = (input, msg) => {
+  const formBox = input.parentElement;
+  const errorMsg = formBox.querySelector(".form-box__error-text");
+  input.classList.remove("form-box__input--error");
+  errorMsg.style.visibility = "hidden";
+  console.log(msg);
+};
+
+const checkLength = (input, min) => {
   if (input.value.length < min) {
     showError(input, `${input.placeholder} atleast ${min} characters`);
   }
@@ -45,7 +55,7 @@ const checkEmail = (email) => {
   if (re.test(email.value)) {
     clearError(email);
   } else {
-    showError(email, "Email not valid");
+    showError(email, "email not valid");
   }
 };
 
@@ -54,16 +64,16 @@ const checkPhone = (phone) => {
   if (re.test(phone.value)) {
     clearError(phone);
   } else {
-    showError(phone, "Phone not valid");
+    showError(phone, "phone not valid");
   }
 };
 
 // check the number of errors
 const checkErrors = () => {
-  const allInputs = document.querySelectorAll(".form-box__input");
+  const allFormInputs = document.querySelectorAll(".form-box__input");
   let errorCount = 0;
 
-  allInputs.forEach((el) => {
+  allFormInputs.forEach((el) => {
     if (el.classList.contains("form-box__input--error")) {
       errorCount++;
     }
@@ -74,6 +84,13 @@ const checkErrors = () => {
   });
 };
 
+const resetForm = () => {
+  [username, email, phone, textarea].forEach((el) => {
+    el.value = "";
+    clearForm(el);
+  });
+};
+
 sendBtn.addEventListener("click", (e) => {
   e.preventDefault();
   checkFormValue([username, email, phone]);
@@ -81,4 +98,15 @@ sendBtn.addEventListener("click", (e) => {
   checkEmail(email);
   checkPhone(phone);
   checkErrors();
+});
+
+clearBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+  resetForm();
+});
+
+closeBtnPopup.addEventListener("click", (e) => {
+  e.preventDefault();
+  popup.classList.remove("show-popup");
+  resetForm();
 });

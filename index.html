@@ -220,44 +220,45 @@
             <h2 class="section-title">Contact</h2>
             <div class="wrapper">
                 <form class="contact__form">
-                    <ul class="contact__list">
-                        <li class="form-box">
-                            <label for="username" class="form-box__label">Tell us your name:</label>
-                            <input type="text" class="form-box__input" id="username" placeholder="name" />
-                            <p class="form-box__error-text"></p>
-                        </li>
-                        <li class="form-box">
-                            <label for="email" class="form-box__label">Email:</label>
-                            <input type="email" class="form-box__input" id='email' placeholder="email" />
-                            <p class="form-box__error-text"></p>
-                        </li>
-                        <li class="form-box">
-                            <label for="phone" class="form-box__label">Phone:</label>
-                            <input type="text" class="form-box__input" id="phone" placeholder="phone" />
-                            <p class="form-box__error-text form-box__error-text--error"></p>
-                        </li>
-                        <li class="form-box">
-                            <label for="slecet-trips" class="form-box__label">Choose a trip:</label>
-                            <select name="names-trip" id="slecet-trips" class="form-box__input form-box__input-select">
-                                <option value="Choose a trip:" disabled="disabled">Choose a trip:</option>
-                                <option value="The Sea Explorer">The Sea Explorer</option>
-                                <option value="The Forest Hike">The Forest Hike</option>
-                                <option value="The Snow Adventure">The Snow Adventure</option>
-                            </select>
-                        </li>
-                        <li class="form-box">
-                            <textarea name="field5" class="form-box__input form-box__input-textarea" id="textarea"
-                                placeholder="Write Message here - Remember, be nice! 😆" cols="30" rows="5"></textarea>
-                        </li>
-                    </ul>
-                    <div>
+                    <div class="form-box">
+                        <label for="username" class="form-box__label">Tell us your name:</label>
+                        <input type="text" class="form-box__input" id="username" placeholder="name" />
+                        <p class="form-box__error-text"></p>
+                    </div>
+                    <div class="form-box">
+                        <label for="email" class="form-box__label">Email:</label>
+                        <input type="email" class="form-box__input" id='email' placeholder="email" />
+                        <p class="form-box__error-text"></p>
+                    </div>
+                    <div class="form-box">
+                        <label for="phone" class="form-box__label">Phone:</label>
+                        <input type="text" class="form-box__input" id="phone" placeholder="phone" />
+                        <p class="form-box__error-text"></p>
+                    </div>
+                    <div class="form-box">
+                        <label for="slecet-trips" class="form-box__label">Choose a trip:</label>
+                        <select name="names-trip" id="slecet-trips" class="form-box__input form-box__input-select">
+                            <option value="Choose a trip:" disabled="disabled">Choose a trip:</option>
+                            <option value="The Sea Explorer">The Sea Explorer</option>
+                            <option value="The Forest Hike">The Forest Hike</option>
+                            <option value="The Snow Adventure">The Snow Adventure</option>
+                        </select>
+                    </div>
+                    <div class="form-box">
+                        <textarea name="field5" class="form-box__input form-box__input-textarea" id="textarea"
+                            placeholder="Write Message here - Remember, be nice! 😆" cols="30" rows="5"></textarea>
+                    </div>
+
+                    <div class="contact__buttons">
                         <button class="contact__button-submit" type="submit">Send Message</button>
+                        <button class="contact__button-clear contact__button-clear--dif-color" type="submit">Clear
+                            form</button>
+                    </div>
+                    <div class="contact-popup">
+                        <p class="contact-popup__paragraph">Your message has been successfully sent!</p>
+                        <button class='contact-popup__button-close' class="close">Close</button>
                     </div>
                 </form>
-                <div class="contact-popup">
-                    <p class="contact-popup__paragraph">Your message has been successfully sent!</p>
-                    <button class='contact-popup__button-close' class="close">Close</button>
-                </div>
             </div>
         </section>
         <footer class="footer">
