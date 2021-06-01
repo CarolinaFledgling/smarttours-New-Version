@@ -29,6 +29,7 @@ const checkFormValue = (input) => {
 };
 
 const clearForm = (input) => {
+  console.log(input);
   const formBox = input.parentElement;
   const errorMsg = formBox.querySelector(".form-box__error-text");
   input.classList.remove("form-box__input--error");
@@ -40,7 +41,7 @@ const clearError = (input, msg) => {
   const errorMsg = formBox.querySelector(".form-box__error-text");
   input.classList.remove("form-box__input--error");
   errorMsg.style.visibility = "hidden";
-  console.log(msg);
+  // console.log(errorMsg);
 };
 
 const checkLength = (input, min) => {
@@ -72,10 +73,12 @@ const checkPhone = (phone) => {
 const checkErrors = () => {
   const allFormInputs = document.querySelectorAll(".form-box__input");
   let errorCount = 0;
+  console.log(errorCount);
 
   allFormInputs.forEach((el) => {
     if (el.classList.contains("form-box__input--error")) {
       errorCount++;
+      console.log(errorCount);
     }
 
     if (errorCount === 0) {
