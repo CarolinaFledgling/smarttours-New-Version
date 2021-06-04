@@ -797,6 +797,9 @@
   font-size: 1.5rem;
   color: #0089fa;
 }
+.form-box__error-text--error {
+  visibility: visible;
+}
 .form-box__label {
   padding-left: 1em;
   font-size: 1.8rem;

@@ -223,17 +223,18 @@
                     <div class="form-box">
                         <label for="username" class="form-box__label">Tell us your name:</label>
                         <input type="text" class="form-box__input" id="username" placeholder="name" />
-                        <p class="form-box__error-text"></p>
+                        <p class="form-box__error-text">Your name is required</p>
                     </div>
                     <div class="form-box">
                         <label for="email" class="form-box__label">Email:</label>
-                        <input type="email" class="form-box__input" id='email' placeholder="email" />
-                        <p class="form-box__error-text"></p>
+                        <input type="email" class="form-box__input" id='email'
+                            placeholder="e.g. your_email@example.com" />
+                        <p class="form-box__error-text">Email is invalid</p>
                     </div>
                     <div class="form-box">
                         <label for="phone" class="form-box__label">Phone:</label>
                         <input type="text" class="form-box__input" id="phone" placeholder="phone" />
-                        <p class="form-box__error-text"></p>
+                        <p class="form-box__error-text">Phone is invalid</p>
                     </div>
                     <div class="form-box">
                         <label for="slecet-trips" class="form-box__label">Choose a trip:</label>
@@ -247,7 +248,7 @@
                     <div class="form-box">
                         <textarea name="field5" class="form-box__input form-box__input-textarea" id="textarea"
                             placeholder="Write Message here - Remember, be nice! 😆" cols="30" rows="5"></textarea>
-                        <p class="form-box__error-text"></p>
+                        <p class="form-box__error-text">Message is required</p>
                     </div>
 
                     <div class="contact__buttons">
@@ -310,7 +311,8 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="js/slick.js"></script>
-    <script src="js/form-validation.js"></script>
+    <!-- <script src="js/form-validation.js"></script> -->
+    <script src="js/form-validation-attempt-2.js"></script>
     <script src="js/main.js"></script>
 </body>
 
