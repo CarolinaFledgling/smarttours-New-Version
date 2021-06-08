@@ -5,7 +5,7 @@ This project is made independently and without any starter code. It is made with
 While creating the website I solved a many problems and learned many new things.
 
 ## General info
-The project required me to build a simple landing page for Travel agency
+The project required me to build a simple landing page for a small Travel agency 🗺️
 
 ## Focusing on :
 - Clear content and easy to navigate. 🚀
