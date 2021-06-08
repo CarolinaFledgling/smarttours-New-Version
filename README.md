@@ -13,6 +13,7 @@ The project required me to build a simple landing page for Travel agency
 - Vanilla JavaScript implementation of smart navigation and animate on scroll 🚀
 - Perfect scores on accessibility, performance, best practices and SEO 🚀
 - JavaScript Form Validation 🚀
+- Mobile friendly 🚀
 
 ## Design What I did:
 - Tried to keep design balanced 
