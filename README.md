@@ -5,13 +5,15 @@ This project is made independently and without any starter code. It is made with
 While creating the website I solved a many problems and learned many new things.
 
 ## General info
-The project required me to build a simple landing page for Travel agency
+The project required me to build a simple landing page for a small Travel agency 🗺️
 
 ## Focusing on :
 - Clear content and easy to navigate. 🚀
 - Built with HTML, CSS and JavaScript 🚀
 - Vanilla JavaScript implementation of smart navigation and animate on scroll 🚀
 - Perfect scores on accessibility, performance, best practices and SEO 🚀
+- JavaScript Form Validation 🚀
+- Mobile friendly 🚀
 
 ## Design What I did:
 - Tried to keep design balanced 
