@@ -11,8 +11,6 @@ const form = document.querySelector(".contact__form");
 const inputFields = [nameInput, emailInput, phoneInput, messageInput];
 let isFormValid = false;
 let isValidationOn = false;
-// kiedy piszemy w jednym inpucie w nastepnych zaczyna sie validacja i dostajemy błąd - zabezpieczenie
-// niechecmy Walidować az nie bedzie na true
 
 const isValidEmail = (email) => {
   const re =
@@ -38,11 +36,7 @@ const invalidateInput = (elem) => {
 
 const validateInputs = () => {
   if (!isValidationOn) return;
-  // zapytać sie o linijke 40 czy dobrze to rozumiesz :D czyli jezeli jest true nie rob tego co ponizej ?? zakoncz działanie
   isFormValid = true;
-  //   resetInput(nameInput);
-  //   resetInput(emailInput);
-  //   resetInput(phoneInput);
   inputFields.forEach(resetInput);
 
   if (!nameInput.value) {
@@ -65,7 +59,6 @@ const validateInputs = () => {
   }
 };
 
-// zapytac sie dlaczego  dajemy addEventListener na wszystkie inputy - ?
 inputFields.forEach((input) => {
   input.addEventListener("input", () => {
     validateInputs();
@@ -78,7 +71,6 @@ const cleanValueInput = () => {
   });
 };
 
-// Zapytac sie robiac formularz powinniśmy  dawac addEventlistener na form i event submit czy clik na guzik ? jak roznica ?
 sendBtn.addEventListener("click", (e) => {
   e.preventDefault();
   isValidationOn = true;
